@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		0F11422F292FE054009FB073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F11422E292FE054009FB073 /* AppDelegate.swift */; };
 		0F114231292FE054009FB073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F114230292FE054009FB073 /* SceneDelegate.swift */; };
-		0F114233292FE054009FB073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F114232292FE054009FB073 /* ViewController.swift */; };
+		0F114233292FE054009FB073 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F114232292FE054009FB073 /* TemperatureViewController.swift */; };
 		0F114236292FE054009FB073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F114234292FE054009FB073 /* Main.storyboard */; };
 		0F114238292FE055009FB073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F114237292FE055009FB073 /* Assets.xcassets */; };
 		0F11423B292FE055009FB073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F114239292FE055009FB073 /* LaunchScreen.storyboard */; };
 		0F114247292FEE10009FB073 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F114246292FEE10009FB073 /* Main.swift */; };
 		0F114249292FEF05009FB073 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F114248292FEF05009FB073 /* Temperature.swift */; };
+		0F3224F52937ACCD0031C455 /* TemperatureBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3224F42937ACCD0031C455 /* TemperatureBrain.swift */; };
+		0F3224F92937B5780031C455 /* ExtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3224F82937B5780031C455 /* ExtencionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F11422B292FE054009FB073 /* temperatureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = temperatureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F11422E292FE054009FB073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F114230292FE054009FB073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F114232292FE054009FB073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F114232292FE054009FB073 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		0F114235292FE054009FB073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F114237292FE055009FB073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F11423A292FE055009FB073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		0F114242292FE071009FB073 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0F114246292FEE10009FB073 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0F114248292FEF05009FB073 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		0F3224F42937ACCD0031C455 /* TemperatureBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureBrain.swift; sourceTree = "<group>"; };
+		0F3224F82937B5780031C455 /* ExtencionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtencionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,8 @@
 		0F114243292FE942009FB073 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0F114232292FE054009FB073 /* ViewController.swift */,
+				0F114232292FE054009FB073 /* TemperatureViewController.swift */,
+				0F3224F82937B5780031C455 /* ExtencionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 			children = (
 				0F114246292FEE10009FB073 /* Main.swift */,
 				0F114248292FEF05009FB073 /* Temperature.swift */,
+				0F3224F42937ACCD0031C455 /* TemperatureBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,11 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F114233292FE054009FB073 /* ViewController.swift in Sources */,
+				0F114233292FE054009FB073 /* TemperatureViewController.swift in Sources */,
 				0F11422F292FE054009FB073 /* AppDelegate.swift in Sources */,
 				0F114247292FEE10009FB073 /* Main.swift in Sources */,
+				0F3224F92937B5780031C455 /* ExtencionController.swift in Sources */,
 				0F114249292FEF05009FB073 /* Temperature.swift in Sources */,
 				0F114231292FE054009FB073 /* SceneDelegate.swift in Sources */,
+				0F3224F52937ACCD0031C455 /* TemperatureBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +334,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,8 +361,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
